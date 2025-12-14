@@ -111,7 +111,40 @@ $(document).ready(function () {
         },
     });
 
-    
+    var swiper = new Swiper(".concern-slider", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".journal-button-next",
+            prevEl: ".journal-button-prev",
+        },
+        pagination: false,
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+            },
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+        },
+    });
+
+
 
     var swiper = new Swiper(".mySwiper.trustees-slider", {
         slidesPerView: 1,
@@ -138,6 +171,21 @@ $(document).ready(function () {
                 spaceBetween: 20,
             },
         },
+    });
+
+
+    $(document).ready(function () {
+        $('.counter-one').counterUp({
+            delay: 100,
+            time: 5000
+        });
+    });
+
+    $(document).ready(function () {
+        $('.counter-two').counterUp({
+            delay: 100,
+            time: 5000
+        });
     });
 
     // Fixed navbar on scroll
