@@ -127,11 +127,11 @@ $(document).ready(function () {
         breakpoints: {
             0: {
                 slidesPerView: 2,
-                spaceBetween: 0,
+                spaceBetween: 10,
             },
             640: {
                 slidesPerView: 3,
-                spaceBetween: 0,
+                spaceBetween: 10,
             },
             768: {
                 slidesPerView: 4,
